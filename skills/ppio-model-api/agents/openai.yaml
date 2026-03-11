@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPIO Model API"
+  short_description: "Inspect and call PPIO model APIs"
+  default_prompt: "Use $ppio-model-api to inspect PPIO models or send explicit model API requests."
