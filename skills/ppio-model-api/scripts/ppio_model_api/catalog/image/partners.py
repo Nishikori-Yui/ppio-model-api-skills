@@ -1,0 +1,66 @@
+from __future__ import annotations
+
+from ...specs import operation
+
+OPERATIONS = (
+    operation(
+        group="image",
+        family="partners",
+        name="gemini-3.1-flash-image-edit",
+        title="Gemini 3.1 Flash 图片编辑",
+        method="POST",
+        base="v3",
+        path="/gemini-3.1-flash-image-edit",
+        doc_slug="reference-gemini-3.1-flash-image-edit",
+    ),
+    operation(
+        group="image",
+        family="partners",
+        name="gemini-3.1-flash-image-text-to-image",
+        title="Gemini 3.1 Flash 图片生成",
+        method="POST",
+        base="v3",
+        path="/gemini-3.1-flash-image-text-to-image",
+        doc_slug="reference-gemini-3.1-flash-image-text-to-image",
+    ),
+    operation(
+        group="image",
+        family="partners",
+        name="glm-image",
+        title="GLM 图像生成",
+        method="POST",
+        base="v3",
+        path="/async/glm-image",
+        doc_slug="reference-glm-image",
+    ),
+    operation(
+        group="image",
+        family="partners",
+        name="grok-imagine-image-edit",
+        title="Grok Imagine Image 图片编辑",
+        method="POST",
+        base="v3",
+        path="/async/grok-imagine-image-edit",
+        doc_slug="reference-grok-imagine-image-edit",
+    ),
+    operation(
+        group="image",
+        family="partners",
+        name="grok-imagine-image-t2i",
+        title="Grok Imagine Image 文生图",
+        method="POST",
+        base="v3",
+        path="/async/grok-imagine-image-t2i",
+        doc_slug="reference-grok-imagine-image-t2i",
+    ),
+    operation(
+        group="image",
+        family="partners",
+        name="hunyuan-image-3",
+        title="Hunyuan Image 3",
+        method="POST",
+        base="v3",
+        path="/async/hunyuan-image-3",
+        doc_slug="reference-hunyuan-image-3",
+    ),
+)
