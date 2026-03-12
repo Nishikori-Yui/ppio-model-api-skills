@@ -1,0 +1,68 @@
+from __future__ import annotations
+
+from ..specs import operation
+
+OPERATIONS = (
+    operation(
+        group="llm",
+        family="openai",
+        name="create-chat-completion",
+        title="创建聊天对话请求",
+        method="POST",
+        base="openai",
+        path="/chat/completions",
+        doc_slug="reference-llm-create-chat-completion",
+    ),
+    operation(
+        group="llm",
+        family="openai",
+        name="create-completion",
+        title="创建对话请求",
+        method="POST",
+        base="openai",
+        path="/completions",
+        doc_slug="reference-llm-create-completion",
+    ),
+    operation(
+        group="llm",
+        family="openai",
+        name="create-embeddings",
+        title="创建嵌入请求",
+        method="POST",
+        base="openai",
+        path="/embeddings",
+        doc_slug="reference-llm-create-embeddings",
+    ),
+    operation(
+        group="llm",
+        family="openai",
+        name="create-rerank",
+        title="创建重排序请求",
+        method="POST",
+        base="openai",
+        path="/rerank",
+        doc_slug="reference-llm-create-rerank",
+    ),
+    operation(
+        group="llm",
+        family="openai",
+        name="list-models",
+        title="列出模型",
+        method="GET",
+        base="openai",
+        path="/models",
+        doc_slug="reference-llm-list-models",
+        explicit_intent=False,
+    ),
+    operation(
+        group="llm",
+        family="openai",
+        name="retrieve-model",
+        title="检索模型",
+        method="GET",
+        base="openai",
+        path="/models/{model}",
+        doc_slug="reference-llm-retrieve-model",
+        explicit_intent=False,
+    ),
+)
